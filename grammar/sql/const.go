@@ -1,0 +1,12 @@
+package sql
+
+const (
+	// FORMATSQLINSERT 插入语法格式
+	FORMATSQLINSERT = "INSERT INTO `%s` (%s) VALUES (%s)"
+	// FORMATSQLSELECT 查询语法格式
+	FORMATSQLSELECT = "SELECT %s FROM %s %s"
+	// FORMATSQLDELETE 删除语法格式
+	FORMATSQLDELETE = "DELETE FROM `%s` %s"
+	// FORMATSQLUPDATE 更新语法格式
+	FORMATSQLUPDATE = "UPDATE `%s` SET %s %s"
+)
