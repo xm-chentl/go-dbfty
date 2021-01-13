@@ -1,13 +1,14 @@
 package mysql
 
 import (
+	"github.com/xm-chentl/go-dbfty"
 	"github.com/xm-chentl/go-dbfty/grammar"
 	"github.com/xm-chentl/go-dbfty/grammar/query"
 	querycode "github.com/xm-chentl/go-dbfty/grammar/query/query-code"
 )
 
 type where struct {
-	ctx     dbfactory.IContext
+	ctx     dbfty.IContext
 	handler query.IHandler
 
 	customSQL  string
@@ -83,7 +84,7 @@ func newWhere() grammar.IWhere {
 	)
 
 	return &where{
-		ctx:     dbfactory.Context{},
+		ctx:     dbfty.Context{},
 		handler: handler,
 	}
 }

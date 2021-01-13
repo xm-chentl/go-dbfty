@@ -1,7 +1,7 @@
 package errors
 
 var (
-	// Error dbfactory错误
+	// Error 错误
 	Error = ""
 	// ErrorModelNotExistPK 模型不存在pk配置
 	ErrorModelNotExistPK = "model primary key does not exist"

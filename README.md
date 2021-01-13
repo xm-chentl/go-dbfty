@@ -34,13 +34,13 @@ func (p Person) TableName() string {
 
 ```go
 // 读写分离使用
-dbfactory.SetDefault(
+dbfty.SetDefault(
     mysql.Proxy(
         "读连接字段串",
         "写连接字段串",
     ),
 )
-dbfactory.SetDefault(
+dbfty.SetDefault(
     mysql.New("数据库连接字符串")
 )
 ```
@@ -48,7 +48,7 @@ dbfactory.SetDefault(
 ### 使用
 
 ```go
-db := dbfactory.Default().Db()
+db := dbfty.Default().Db()
 // entity 为数据的载体
 entity := Person{
     ID: "test-person-001",
