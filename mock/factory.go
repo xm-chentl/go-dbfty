@@ -13,11 +13,11 @@ func (f *factory) Db() dbfty.IRepository {
 	return f.repository
 }
 
-func (f *factory) Uow() dbfactory.IUnitOfWork {
+func (f *factory) Uow() dbfty.IUnitOfWork {
 	return nil
 }
 
 // New 新建一个mock实例
-func New() dbfactory.IFactory {
+func New() dbfty.IFactory {
 	return nil
 }
