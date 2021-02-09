@@ -30,6 +30,10 @@ func (r *repository) Query() dbfty.IQuery {
 	}
 }
 
+func (r *repository) Ping() (bool, error) {
+	return true, nil
+}
+
 func newRepository() *repository {
 	return &repository{
 		data: make(map[string][]interface{}),
