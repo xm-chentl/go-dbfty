@@ -14,4 +14,5 @@ type IQuery interface {
 	Count(interface{}) (int, error)
 	First(interface{}) error
 	ToArray(interface{}) error
+	Exc(interface{}, string, ...interface{}) error
 }
