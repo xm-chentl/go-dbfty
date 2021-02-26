@@ -89,3 +89,12 @@ func (t table) Check() error {
 
 	return nil
 }
+
+func (t table) GetValueByMap(data interface{}) (results map[string]interface{}) {
+	for _, column := range t.GetColumns() {
+		value, isNil := column.GetValue(data)
+		if !isNil {
+			results[column.Name()] = value
+		}
+	}
+}
