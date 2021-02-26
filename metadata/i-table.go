@@ -10,4 +10,5 @@ type ITable interface {
 	GetColumnsByMap() map[string]IColumn
 	GetType() reflect.Type
 	GetPrimaryKeyBy() IColumn
+	GetValueByMap(interface{}) map[string]interface{}
 }
