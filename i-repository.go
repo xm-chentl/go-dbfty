@@ -4,5 +4,5 @@ package dbfty
 type IRepository interface {
 	IWriter
 	IReader
-	Ping() (bool, error)
+	Ping() error
 }
