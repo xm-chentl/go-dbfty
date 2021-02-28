@@ -19,8 +19,8 @@ func (f *factory) Uow() dbfty.IUnitOfWork {
 	return nil
 }
 
-func (f *factory) IsHealth() (bool, error) {
-	return true, nil
+func (f *factory) IsHealth() error {
+	return nil
 }
 
 // New 新建一个mock实例
