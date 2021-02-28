@@ -25,5 +25,5 @@ func (f *factory) IsHealth() error {
 
 // New 新建一个mock实例
 func New() dbfty.IFactory {
-	return nil
+	return &factory{}
 }
