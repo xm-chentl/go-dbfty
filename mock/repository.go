@@ -9,10 +9,6 @@ type repository struct {
 	data map[string][]interface{}
 }
 
-func (r *repository) Ping() (bool, error) {
-	panic("implement me")
-}
-
 func (r *repository) Add(entry interface{}) dbfty.IAdd {
 	return &add{
 		entry:      entry,
